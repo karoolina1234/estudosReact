@@ -66,6 +66,13 @@ class App extends Component{
     })
   }
 
+
+  removerComentario =(comentario) =>{
+    let lista = this.state.comentarios;
+    lista = lista.filter(c=> c !== comentario) //Filtrar todos os comentarios que forem diferentes do comentario clicado e assim retorna um novo array excluindo o atual comentario da listagem.
+
+    this.setState({comentarios: lista})  // State comentarios recebe o lista
+  }
 inputvalores= evento =>{
 
   const value = evento.target.value;
@@ -86,6 +93,7 @@ inputvalores= evento =>{
           email={comentario.email}
           data={comentario.data}
           mensagem={comentario.mensagem}
+          onRemove={this.removerComentario.bind(this, comentario)} //onRemove n existe foi inventado agr, e com o bind é enviado uma referencia da função para o componente comentario
           />
         ))
       }
