@@ -1,0 +1,31 @@
+h1{
+    text-align: center;
+}
+.btn{
+    background-color: rgba(33, 117, 228, 0.719);
+    color: #FFF;
+    text-align: center;
+    margin-top: 1em;
+}
+.btn:hover{
+    color: #FFF;
+}
+
+.col-md-10{
+    margin: 13px 0px;
+    width: 100%;
+    text-align: center;
+}
+.addComent{
+    text-align: center;
+}
+.tituloFormulario{
+    text-align: center;
+    margin:20px 0px;
+}
+.col-md-6{
+    display: inline-block;
+    width: 49%!important;
+    margin: 0px 6px;
+    vertical-align: middle;
+}
