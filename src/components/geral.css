@@ -3,8 +3,13 @@
     margin-bottom: 2em;
     border-bottom: 1px solid #CCC;
     border-top: 1px solid #ccc;
+    position: relative;
+    box-shadow: 1px 2.5px 5px 2px #ccc;
 }
 
 .btn.btn-remover.my-3{
     background-color: rgb(221, 11, 11);
+    position: absolute;
+    top: 0;
+    right: 2em;
 }
